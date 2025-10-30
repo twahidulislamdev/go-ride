@@ -26,10 +26,10 @@ const Banner = () => {
           </p>
         </div>
         <div className="gap-x-5 flex">
-          <button className="relative mt-10 px-6 py-3 bg-mainColor text-black rounded-xl hover:bg-white  transition-all duration-300 hover:cursor-pointer">
+          <button className="relative mt-10 px-8 py-3.5 bg-mainColor  text-lg text-black rounded-xl hover:bg-white  transition-all duration-300 hover:cursor-pointer">
             View Details
           </button>
-          <button className="relative mt-10 px-6 py-3 bg-transparent text-white rounded-xl outline-2 outline-white hover:bg-white hover:text-black transition-all duration-300 hover:cursor-pointer">
+          <button className="relative mt-10 px-8 py-3.5 bg-transparent text-lg text-white rounded-2xl outline-2 outline-white hover:bg-white hover:text-black transition-all duration-300 hover:cursor-pointer">
             Book Now
           </button>
         </div>
