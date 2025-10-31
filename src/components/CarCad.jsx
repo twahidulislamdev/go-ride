@@ -4,7 +4,7 @@ import { TbAutomaticGearboxFilled } from "react-icons/tb";
 import { BsFuelPumpFill } from "react-icons/bs";
 import { FaCarSide } from "react-icons/fa6";
 
-const Car = ({
+const CarCad = ({
   CarTitle,
   CarPrice,
   CarImage,
@@ -58,4 +58,4 @@ const Car = ({
   );
 };
 
-export default Car;
+export default CarCad;

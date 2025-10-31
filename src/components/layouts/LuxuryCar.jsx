@@ -1,5 +1,5 @@
 import Container from "../Container";
-import Car from "../Car";
+
 
 // Fix: Use consistent case for file extensions and check actual file names
 import AudiQ8 from "../../assets/audiQ8.png";
@@ -8,6 +8,7 @@ import MercedesGLSClass from "../../assets/mercedesGLSClass.png";
 import AudiS8 from "../../assets/audiS8.png";
 import Bmw7 from "../../assets/bmw7.png";
 import MercedesSClass from "../../assets/mercedesSClass.png";
+import CarCad from "../CarCad";
 
 const LuxuryCar = () => {
   const Cars = [
@@ -84,7 +85,7 @@ const LuxuryCar = () => {
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {Cars.map((item) => (
-              <Car
+              <CarCad
                 key={item.id}
                 id={item.id}
                 CarTitle={item.CarTitle}
