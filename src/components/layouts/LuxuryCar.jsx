@@ -3,6 +3,9 @@ import Container from "../Container";
 import AstonMartinDbx from "../../assets/astonMartinDbx.jpg";
 import audiRs7 from "../../assets/audiRs7.jpg";
 import audiQ8 from "../../assets/audiQ8.jpg";
+import bmw3 from "../../assets/bmw3.png";
+import audiA5 from "../../assets/audiA5.png"
+
 import Car from "../Car";
 
 const LuxuryCar = () => {
@@ -15,7 +18,7 @@ const LuxuryCar = () => {
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
-      CarType: "Sedan"
+      CarType: "Sedan",
     },
     {
       id: "02",
@@ -25,7 +28,7 @@ const LuxuryCar = () => {
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
-      CarType: "SUV"
+      CarType: "SUV",
     },
     {
       id: "03",
@@ -35,7 +38,27 @@ const LuxuryCar = () => {
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
-      CarType: "Coupe"
+      CarType: "Coupe",
+    },
+    {
+      id: "04",
+      CarTitle: "BMW 3 Series",
+      CarPrice: "90.00",
+      CarImage: bmw3,
+      CarSeats: "4 Seats",
+      GearboxType: "Auto",
+      FuelType: "Petrol",
+      CarType: "Coupe",
+    },
+    {
+      id: "05",
+      CarTitle: "BMW 3 Series",
+      CarPrice: "90.00",
+      CarImage: audiA5,
+      CarSeats: "4 Seats",
+      GearboxType: "Auto",
+      FuelType: "Petrol",
+      CarType: "Coupe",
     },
   ];
 

@@ -14,15 +14,15 @@ const Car = ({
   FuelType,
 }) => {
   return (
-    <div className="w-full h-auto bg-[#222222] rounded-lg shadow-md hover:shadow-xl transition">
+    <div className="w-full h-[430px] rounded-lg shadow-md hover:shadow-xl transition border-2 border-neutral-800">
       <div className="overflow-hidden rounded-lg">
         <img
           src={CarImage}
           alt={CarTitle}
-          className="w-full h-auto rounded-lg object-cover"
+          className="w-full h-[250px] rounded-lg object-cover"
         />
       </div>
-      <div className="pt-5 pb-5 px-5">
+      <div className="pt-5 pb-5 px-5 bg-[#222222]  rounded-lg">
         <h3 className="text-start text-2xl font-semibold text-white">
           {CarTitle}
         </h3>
@@ -46,7 +46,8 @@ const Car = ({
         </div>
         <div className="flex justify-between items-center pt-5">
           <p className="text-2xl font-medium text-start text-mainColor pt-2">
-            ${CarPrice} <span className="text-white text-lg font-medium pl-1">/ day</span>
+            ${CarPrice}{" "}
+            <span className="text-white text-lg font-medium pl-1">/ day</span>
           </p>
           <button className="px-2.5 py-2 bg-mainColor text-lg font-medium text-black rounded-xl hover:bg-white  transition-all duration-300 hover:cursor-pointer">
             Book Now
