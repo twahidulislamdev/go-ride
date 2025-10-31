@@ -13,15 +13,17 @@ const Banner = () => {
 
       {/* Banner Content */}
       <Container>
-        <h5 className=" relative text-lg text-mainColor">
-          <span className="text-mainColor">-</span> PREMIUM
+        <h5 className=" relative text-lg text-mainColor tracking-[5px]">
+          - PREMIUM
         </h5>
         <h1 className="relative text-white text-8xl font-bold z-10">
           Rental Car
         </h1>
         <div className="relative flex justify-start items-center gap-x-5 mt-5">
-          <h6 className="text-xl text-white">Bentley Bentayga</h6>
-          <p className="text-2xl text-mainColor">
+          <h6 className="text-xl text-white tracking-[1px]">
+            Bentley Bentayga
+          </h6>
+          <p className="text-2xl font-semibold text-mainColor">
             ${"100"} <span className="text-lg text-white">/day</span>
           </p>
         </div>
