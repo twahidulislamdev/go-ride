@@ -4,7 +4,7 @@ import Container from "../Container";
 // Fix: Use consistent case for file extensions and check actual file names
 import AudiQ8 from "../../assets/audiQ8.png";
 import BmwX7 from "../../assets/bmwX7.png";
-import MercedesGLSClass from "../../assets/mercedesGLSClass.png";
+import BmwX5 from "../../assets/bmwX5.png";
 import AudiS8 from "../../assets/audiS8.png";
 import Bmw7 from "../../assets/bmw7.png";
 import MercedesSClass from "../../assets/mercedesSClass.png";
@@ -34,9 +34,9 @@ const LuxuryCar = () => {
     },
     {
       id: "03",
-      CarTitle: "Mercedes GLS Class",
+      CarTitle: "BMW X5",
       CarPrice: "100.00",
-      CarImage: MercedesGLSClass,
+      CarImage: BmwX5,
       CarSeats: "7 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
