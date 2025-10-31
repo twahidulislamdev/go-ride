@@ -1,6 +1,5 @@
 // components/LuxuryCar.jsx   (or .tsx if you use TypeScript)
 import React from "react";
-import Image from "next/image";      // <-- use Next.js <Image>
 import Container from "../Container";
 import Car from "../Car";
 
