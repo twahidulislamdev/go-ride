@@ -10,20 +10,32 @@ const LuxuryCar = () => {
     {
       id: "01",
       CarTitle: "Aston Martin DBX",
-      CarPrice: "$200,000",
+      CarPrice: "120.00",
       CarImage: AstonMartinDbx,
+      CarSeats: "4 Seats",
+      GearboxType: "Auto",
+      FuelType: "Petrol",
+      CarType: "Sedan"
     },
     {
       id: "02",
       CarTitle: "Audi RS7",
-      CarPrice: "$120,000",
+      CarPrice: "120.00",
       CarImage: audiRs7,
+      CarSeats: "4 Seats",
+      GearboxType: "Auto",
+      FuelType: "Petrol",
+      CarType: "SUV"
     },
     {
       id: "03",
       CarTitle: "Audi Q8",
-      CarPrice: "$100,000",
+      CarPrice: "100.00",
       CarImage: audiQ8,
+      CarSeats: "4 Seats",
+      GearboxType: "Auto",
+      FuelType: "Petrol",
+      CarType: "Coupe"
     },
   ];
 
@@ -37,12 +49,16 @@ const LuxuryCar = () => {
       <div className="p-10">
         <Container>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {Cars.map((car) => (
+            {Cars.map((item) => (
               <Car
-                key={car.id}
-                CarTitle={car.CarTitle}
-                CarPrice={car.CarPrice}
-                CarImage={car.CarImage}
+                key={item.id}
+                CarTitle={item.CarTitle}
+                CarPrice={item.CarPrice}
+                CarImage={item.CarImage}
+                CarType={item.CarType}
+                CarSeats={item.CarSeats}
+                GearboxType={item.GearboxType}
+                FuelType={item.FuelType}
               />
             ))}
           </div>
