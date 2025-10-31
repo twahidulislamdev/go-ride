@@ -1,15 +1,13 @@
-// components/LuxuryCar.jsx   (or .tsx if you use TypeScript)
 import React from "react";
 import Container from "../Container";
-import Car from "../Car";
+import AudiQ8 from '../../assets/audiQ8.png';
+import BmwX7 from "../../assets/bmwX7.png";
+import MercedesGLSClass from "../../assets/mercedesGLSClass.png";
+import AudiS8 from "../../assets/audiS8.png";
+import Bmw7 from "../../assets/bmw7.png";
+import MercedesSClass from "../../assets/mercedesSClass.png";
 
-// ---- 1. Import images correctly (relative to /public) ----
-import AudiQ8 from "../../public/assets/audiQ8.png";
-import BmwX7 from "../../public/assets/bmwX7.png";
-import MercedesGLSClass from "../../public/assets/mercedesGLSClass.png";
-import AudiS8 from "../../public/assets/audiS8.png";
-import Bmw7 from "../../public/assets/bmw7.png";
-import MercedesSClass from "../../public/assets/mercedesSClass.png";
+import Car from "../Car";
 
 const LuxuryCar = () => {
   const Cars = [
@@ -76,10 +74,8 @@ const LuxuryCar = () => {
   ];
 
   return (
-    <section className="pt-10 pb-20 bg-secondaryColor text-center">
-      <h6 className="text-sm text-mainColor tracking-[8px]">
-        SELECT YOUR CAR
-      </h6>
+    <div className="pt-10 pb-20 bg-secondaryColor text-center">
+      <h6 className="text-sm text-mainColor tracking-[8px]">SELECT YOUR CAR</h6>
       <h3 className="text-4xl font-bold text-white pt-5">
         Our <span className="text-mainColor">Luxury Cars Fleets</span>
       </h3>
@@ -90,6 +86,7 @@ const LuxuryCar = () => {
             {Cars.map((item) => (
               <Car
                 key={item.id}
+                id={item.id} 
                 CarTitle={item.CarTitle}
                 CarPrice={item.CarPrice}
                 CarImage={item.CarImage}
@@ -102,7 +99,7 @@ const LuxuryCar = () => {
           </div>
         </Container>
       </div>
-    </section>
+    </div>
   );
 };
 
