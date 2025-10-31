@@ -39,7 +39,7 @@ const LuxuryCar = () => {
       CarSeats: "7 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
-      CarType: "Coupe",
+      CarType: "SUV",
     },
     {
       id: "04",
@@ -53,13 +53,13 @@ const LuxuryCar = () => {
     },
     {
       id: "05",
-      CarTitle: "BMW 7 ",
+      CarTitle: "BMW 7",
       CarPrice: "90.00",
       CarImage: Bmw7,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
-      CarType: "Coupe",
+      CarType: "Sedan",
     },
     {
       id: "06",
@@ -69,7 +69,7 @@ const LuxuryCar = () => {
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
-      CarType: "Coupe",
+      CarType: "Sedan",
     },
   ];
 
