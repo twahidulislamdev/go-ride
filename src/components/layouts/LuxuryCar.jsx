@@ -1,10 +1,11 @@
 import React from "react";
 import Container from "../Container";
-import AstonMartinDbx from "../../assets/astonMartinDbx.jpg";
-import audiRs7 from "../../assets/audiRs7.jpg";
-import audiQ8 from "../../assets/audiQ8.jpg";
-import bmw3 from "../../assets/bmw3.png";
-import audiA5 from "../../assets/audiA5.png"
+import AudiQ8 from "../../assets/audiQ8.png";
+import BmwX7 from "../../assets/bmwX7.png";
+import MercedesGLSClass from "../../assets/mercedesGLSClass.png";
+import AudiS8 from "../../assets/audiS8.png";
+import Bmw7 from "../../assets/bmw7.png";
+import MercedesSClass from "../../assets/mercedesSClass.png";
 
 import Car from "../Car";
 
@@ -12,19 +13,19 @@ const LuxuryCar = () => {
   const Cars = [
     {
       id: "01",
-      CarTitle: "Aston Martin DBX",
+      CarTitle: "Audi Q8",
       CarPrice: "120.00",
-      CarImage: AstonMartinDbx,
-      CarSeats: "4 Seats",
+      CarImage: AudiQ8,
+      CarSeats: "7 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
-      CarType: "Sedan",
+      CarType: "SUV",
     },
     {
       id: "02",
-      CarTitle: "Audi RS7",
+      CarTitle: "BMW X7",
       CarPrice: "120.00",
-      CarImage: audiRs7,
+      CarImage: BmwX7,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
@@ -34,7 +35,7 @@ const LuxuryCar = () => {
       id: "03",
       CarTitle: "Audi Q8",
       CarPrice: "100.00",
-      CarImage: audiQ8,
+      CarImage: MercedesGLSClass,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
@@ -42,19 +43,29 @@ const LuxuryCar = () => {
     },
     {
       id: "04",
-      CarTitle: "BMW 3 Series",
+      CarTitle: "Audi S8",
       CarPrice: "90.00",
-      CarImage: bmw3,
+      CarImage: AudiS8,
+      CarSeats: "4 Seats",
+      GearboxType: "Auto",
+      FuelType: "Petrol",
+      CarType: "Sedan",
+    },
+    {
+      id: "05",
+      CarTitle: "BMW 7 ",
+      CarPrice: "90.00",
+      CarImage: Bmw7,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
       CarType: "Coupe",
     },
     {
-      id: "05",
-      CarTitle: "BMW 3 Series",
+      id: "06",
+      CarTitle: "Mercedes S-Class",
       CarPrice: "90.00",
-      CarImage: audiA5,
+      CarImage: MercedesSClass,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
