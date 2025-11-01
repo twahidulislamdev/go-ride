@@ -1,10 +1,9 @@
 import Container from "../Container";
 
-
 // Fix: Use consistent case for file extensions and check actual file names
 import AudiQ8 from "../../assets/audiQ8.png";
 import BmwX7 from "../../assets/bmwX7.png";
-import BmwX5 from "../../assets/bmwX5.png";
+import MercedesGLS from "../../assets/mercedesGLS.png";
 import AudiS8 from "../../assets/audiS8.png";
 import Bmw7 from "../../assets/bmw7.png";
 import MercedesSClass from "../../assets/mercedesSClass.png";
@@ -15,7 +14,7 @@ const LuxuryCar = () => {
     {
       id: "01",
       CarTitle: "Audi Q8",
-      CarPrice: "120.00",
+      CarPrice: "150.00",
       CarImage: AudiQ8,
       CarSeats: "7 Seats",
       GearboxType: "Auto",
@@ -25,7 +24,7 @@ const LuxuryCar = () => {
     {
       id: "02",
       CarTitle: "BMW X7",
-      CarPrice: "120.00",
+      CarPrice: "150.00",
       CarImage: BmwX7,
       CarSeats: "7 Seats",
       GearboxType: "Auto",
@@ -34,9 +33,9 @@ const LuxuryCar = () => {
     },
     {
       id: "03",
-      CarTitle: "BMW X5",
-      CarPrice: "100.00",
-      CarImage: BmwX5,
+      CarTitle: "Mercedes GLS",
+      CarPrice: "150.00",
+      CarImage: MercedesGLS,
       CarSeats: "7 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
@@ -45,7 +44,7 @@ const LuxuryCar = () => {
     {
       id: "04",
       CarTitle: "Audi S8",
-      CarPrice: "90.00",
+      CarPrice: "150.00",
       CarImage: AudiS8,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
@@ -55,7 +54,7 @@ const LuxuryCar = () => {
     {
       id: "05",
       CarTitle: "BMW 7",
-      CarPrice: "90.00",
+      CarPrice: "150.00",
       CarImage: Bmw7,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
@@ -65,7 +64,7 @@ const LuxuryCar = () => {
     {
       id: "06",
       CarTitle: "Mercedes S-Class",
-      CarPrice: "90.00",
+      CarPrice: "150.00",
       CarImage: MercedesSClass,
       CarSeats: "4 Seats",
       GearboxType: "Auto",
@@ -99,6 +98,9 @@ const LuxuryCar = () => {
             ))}
           </div>
         </Container>
+        <button className="mt-10 px-3 py-2 bg-mainColor text-lg font-medium text-black rounded-xl hover:bg-white  transition-all duration-300 hover:cursor-pointer">
+          See More...
+        </button>
       </div>
     </div>
   );

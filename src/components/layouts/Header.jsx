@@ -24,7 +24,7 @@ const Header = () => {
 
   const menuItems = [
     { name: "HOME", path: "/" },
-    { name: "SHOP", path: "/shop" },
+    { name: "CARS", path: "/shop" },
     { name: "BLOG", path: "/blog" },
     { name: "ABOUT", path: "/about" },
     { name: "CONTACT", path: "/contact" },
@@ -33,9 +33,12 @@ const Header = () => {
 
   return (
     <>
+      {/* Desktop Header part start  */}
       <div
-        className={`fixed top-0 left-0 right-0 py-5 w-full z-20 transition-all duration-300 ${
-          isScrolled ? "bg-secondaryColor backdrop-blur-md shadow-md transition-ease-in-out transition-all duration-200" : "bg-transparent"
+        className={`hidden lg:block fixed top-0 left-0 right-0 py-5 w-full z-20 transition-all duration-300 ${
+          isScrolled
+            ? "bg-secondaryColor backdrop-blur-md shadow-md transition-ease-in-out transition-all duration-200"
+            : "bg-transparent"
         }`}
       >
         <Container>
@@ -71,6 +74,46 @@ const Header = () => {
             </div>
           </Flex>
         </Container>
+      </div>
+      {/* Desktop Header part End  */}
+
+      {/* Mobile Header part start  */}
+      <div
+        className={`px-3 block lg:hidden  fixed top-0 left-0 right-0 py-5 w-full z-20 transition-all duration-300 ${
+          isScrolled
+            ? "bg-secondaryColor backdrop-blur-md shadow-md transition-ease-in-out transition-all duration-200"
+            : "bg-transparent"
+        }`}
+      >
+        <Flex className={"justify-between items-center"}>
+          <div className="text-2xl font-bold text-white">
+            <span className="text-mainColor tracking-[2px]">R</span>ENAX
+          </div>
+          {/* Icons + Search */}
+          <div className="flex items-center gap-x-3 lg:gap-x-5">
+            <div className="flex-1 mx-3 lg:mx-5 flex justify-center items-center">
+              <input
+                className="w-[165px] lg:w-[250px] py-2 px-3 rounded-md outline-1 outline-white text-white text-sm dark:placeholder:text-white"
+                type="text"
+                placeholder="What are you looking?"
+              />
+            </div>
+            <FaRegHeart className="text-white text-xl cursor-pointer" />
+            <HiOutlineShoppingBag className="text-white text-2xl cursor-pointer" />
+            <FaRegUser className="text-white text-xl cursor-pointer" />
+          </div>
+        </Flex>
+      </div>
+      {/* Mobile Header part End  */}
+
+      <div className="py-4 px-3  block lg:hidden w-full fixed bottom-0 left-0 z-10 bg-secondaryColor">
+        <ul className="flex justify-between text-white">
+          <li>CARS</li>
+          <li>BLOG</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+          <li>PAGES</li>
+        </ul>
       </div>
     </>
   );
