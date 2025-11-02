@@ -5,7 +5,7 @@ const ServiceCard = ({ img, title, id }) => {
     <>
       <div className="relative bg-[#1c1c1c] rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition-all duration-300">
         {/* Image */}
-        <img src={img} alt={title} className="w-full h-80 object-cover" />
+        <img src={img} alt={title} className="w-full h-full object-cover" />
 
         {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
