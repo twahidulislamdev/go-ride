@@ -7,6 +7,8 @@ import Container from "../Container";
 import serviceOne from "../../assets/serviceOne.jpg";
 import serviceTwo from "../../assets/serviceTwo.jpg";
 import serviceThree from "../../assets/serviceThree.jpg";
+import serviceFour from "../../assets/serviceFour.jpg";
+import serviceFive from "../../assets/serviceFive.jpg";
 
 // ✅ Import slick CSS
 import "slick-carousel/slick/slick.css";
@@ -17,8 +19,8 @@ const Service = () => {
     { id: "01", title: "Corporate Car Rental", img: serviceOne },
     { id: "02", title: "Car Rental with Driver", img: serviceTwo },
     { id: "03", title: "Airport Transfer", img: serviceThree },
-    { id: "04", title: "Corporate Car Rental", img: serviceOne },
-    { id: "05", title: "Luxury Car Rental", img: serviceTwo },
+    { id: "04", title: "VIP Transfer", img: serviceFour },
+    { id: "05", title: "Private Transfer", img: serviceFive },
     { id: "06", title: "Airport Transfer", img: serviceThree },
 
   ];
