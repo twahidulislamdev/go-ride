@@ -5,7 +5,7 @@ import Container from "../Container";
 const Banner = () => {
   return (
     <div
-      className="w-full px-2 relative h-[380px] lg:h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
+      className="w-full px-2 relative h-[370px] lg:h-screen bg-cover bg-center bg-no-repeat flex items-center justify-center"
       style={{ backgroundImage: `url(${BankgroundOne})` }}
     >
       {/* Overlay */}

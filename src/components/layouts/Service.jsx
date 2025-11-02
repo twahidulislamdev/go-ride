@@ -3,14 +3,14 @@ import Slider from "react-slick";
 import ServiceCard from "../ServiceCard";
 import Container from "../Container";
 
-// ✅ Import images
+//  Import images
 import serviceOne from "../../assets/serviceOne.jpg";
 import serviceTwo from "../../assets/serviceTwo.jpg";
 import serviceThree from "../../assets/serviceThree.jpg";
 import serviceFour from "../../assets/serviceFour.jpg";
 import serviceFive from "../../assets/serviceFive.jpg";
 
-// ✅ Import slick CSS
+//  Import slick CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
