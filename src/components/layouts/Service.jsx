@@ -9,6 +9,7 @@ import serviceTwo from "../../assets/serviceTwo.jpg";
 import serviceThree from "../../assets/serviceThree.jpg";
 import serviceFour from "../../assets/serviceFour.jpg";
 import serviceFive from "../../assets/serviceFive.jpg";
+import serviceSix from "../../assets/serviceSix.jpg";
 
 //  Import slick CSS
 import "slick-carousel/slick/slick.css";
@@ -21,7 +22,7 @@ const Service = () => {
     { id: "03", title: "Airport Transfer", img: serviceThree },
     { id: "04", title: "VIP Transfer", img: serviceFour },
     { id: "05", title: "Private Transfer", img: serviceFive },
-    { id: "06", title: "Airport Transfer", img: serviceThree },
+    { id: "06", title: "Fleet Leasing", img: serviceSix },
 
   ];
 
@@ -45,13 +46,13 @@ const Service = () => {
   };
 
   return (
-    <div className="pt-20 pb-10 relative flex flex-col items-center justify-center bg-secondaryColor text-center">
+    <div className="py-10 relative flex flex-col items-center justify-center bg-secondaryColor text-center">
       <h6 className="text-sm text-mainColor tracking-[8px]">WHAT WE DO</h6>
-      <h3 className="text-4xl font-bold text-white pt-5">
+      <h3 className="text-3xl lg:text-4xl font-bold text-white pt-5">
         Our <span className="text-mainColor">Services</span>
       </h3>
 
-      <div className="w-full flex items-center justify-center p-5">
+      <div className="w-full flex items-center justify-center p-5 lg:py-10">
         <Container>
           {/* 👇 Slick slider for small/medium screens */}
           <div className="block lg:hidden w-full">

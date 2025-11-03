@@ -25,7 +25,7 @@ const Categories = () => {
         <h6 className="text-sm text-mainColor tracking-[8px] text-center">
           CATEGORIES
         </h6>
-        <h3 className="text-4xl font-bold text-white pt-5 text-center">
+        <h3 className="text-3xl lg:text-4xl font-bold text-white pt-5">
           Explore Our <span className="text-mainColor">Categories</span>
         </h3>
         {/* Categories Grid */}

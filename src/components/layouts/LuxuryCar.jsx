@@ -9,7 +9,7 @@ import Bmw7 from "../../assets/bmw7.png";
 import MercedesSClass from "../../assets/mercedesSClass.png";
 import CarCad from "../CarCad";
 
-// ✅ Import slick CSS
+//  Import slick CSS
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -98,13 +98,13 @@ const LuxuryCar = () => {
   };
 
   return (
-    <div className="pt-10 pb-20 bg-secondaryColor text-center">
+    <div className="py-5 bg-secondaryColor text-center">
       <h6 className="text-xs lg:text-sm text-mainColor tracking-[8px]">SELECT YOUR CAR</h6>
       <h3 className="text-3xl lg:text-4xl font-bold text-white pt-5">
         Our <span className="text-mainColor">Luxury Cars Fleets</span>
       </h3>
 
-      <div className="p-5">
+      <div className=" p-5 lg:pt-10 pb-5">
         <Container>
           {/*  React Slick only for small & medium devices */}
           <div className="block lg:hidden">
