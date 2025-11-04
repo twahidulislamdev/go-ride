@@ -3,9 +3,9 @@ import Slider from "react-slick";
 
 import AudiQ8 from "../../assets/audiQ8.png";
 import BmwX7 from "../../assets/bmwX7.png";
-import MercedesGLS from "../../assets/mercedesGLS.png";
+import MercedesMaybac from "../../assets/marcedesMaybac.png";
 import AudiS8 from "../../assets/audiS8.png";
-import Bmw7 from "../../assets/bmw7.png";
+import Bmw8 from "../../assets/bmw8.png";
 import MercedesSClass from "../../assets/mercedesSClass.png";
 import CarCad from "../CarCad";
 
@@ -27,6 +27,16 @@ const LuxuryCar = () => {
     },
     {
       id: "02",
+      CarTitle: "Mercedes Maybach",
+      CarPrice: "150.00",
+      CarImage: MercedesMaybac,
+      CarSeats: "7 Seats",
+      GearboxType: "Auto",
+      FuelType: "Petrol",
+      CarType: "SUV",
+    },
+    {
+      id: "03",
       CarTitle: "BMW X7",
       CarPrice: "150.00",
       CarImage: BmwX7,
@@ -35,32 +45,23 @@ const LuxuryCar = () => {
       FuelType: "Petrol",
       CarType: "SUV",
     },
-    {
-      id: "03",
-      CarTitle: "Mercedes GLS",
-      CarPrice: "150.00",
-      CarImage: MercedesGLS,
-      CarSeats: "7 Seats",
-      GearboxType: "Auto",
-      FuelType: "Petrol",
-      CarType: "SUV",
-    },
+
     {
       id: "04",
       CarTitle: "Audi S8",
       CarPrice: "150.00",
       CarImage: AudiS8,
-      CarSeats: "4 Seats",
+      CarSeats: "5 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
       CarType: "Sedan",
     },
     {
       id: "05",
-      CarTitle: "BMW 7",
+      CarTitle: "BMW 8",
       CarPrice: "150.00",
-      CarImage: Bmw7,
-      CarSeats: "4 Seats",
+      CarImage: Bmw8,
+      CarSeats: "5 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
       CarType: "Sedan",
@@ -70,14 +71,14 @@ const LuxuryCar = () => {
       CarTitle: "Mercedes S-Class",
       CarPrice: "150.00",
       CarImage: MercedesSClass,
-      CarSeats: "4 Seats",
+      CarSeats: "5 Seats",
       GearboxType: "Auto",
       FuelType: "Petrol",
       CarType: "Sedan",
     },
   ];
 
-  // ✅ Slider for small screens only
+  //  Slider for small screens only
   const settings = {
     dots: true,
     infinite: true,
@@ -87,19 +88,13 @@ const LuxuryCar = () => {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-    appendDots: (dots) => (
-      <div>
-        <ul className="!m-0 !p-0 flex justify-center mt-5">{dots}</ul>
-      </div>
-    ),
-    customPaging: () => (
-      <div className="w-3 h-3 bg-yellow-400 rounded-full mx-1 transition-all duration-300 hover:scale-110"></div>
-    ),
   };
 
   return (
     <div className="py-5 bg-secondaryColor text-center">
-      <h6 className="text-xs lg:text-sm text-mainColor tracking-[8px]">SELECT YOUR CAR</h6>
+      <h6 className="text-xs lg:text-sm text-mainColor tracking-[8px]">
+        SELECT YOUR CAR
+      </h6>
       <h3 className="text-3xl lg:text-4xl font-bold text-white pt-5">
         Our <span className="text-mainColor">Luxury Cars Fleets</span>
       </h3>

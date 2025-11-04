@@ -3,6 +3,7 @@ import Banner from "../layouts/Banner";
 import Service from "../layouts/Service";
 import LuxuryCar from "../layouts/LuxuryCar";
 import Categories from "../layouts/Categories";
+import PopularCar from "../layouts/PopularCar";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Categories />
       <LuxuryCar />
       <Service />
+      <PopularCar />
     </>
   );
 };
