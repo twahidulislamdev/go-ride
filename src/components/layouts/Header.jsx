@@ -106,7 +106,7 @@ const Header = () => {
       </div>
       {/* Mobile Header part End  */}
 
-      <div className="py-4 px-3  block lg:hidden w-full fixed bottom-0 left-0 z-10 bg-secondaryColor">
+      <div className="py-7 px-3  block lg:hidden w-full fixed bottom-0 left-0 z-10 bg-[#222222]">
         <ul className="flex justify-between text-white">
           <li>CARS</li>
           <li>BLOG</li>
