@@ -17,7 +17,7 @@ const PopularCar = () => {
     {
       id: "01",
       CarTitle: "Audi A5",
-      CarPrice: "150.00",
+      CarPrice: "100.00",
       CarImage: AudiA5,
       CarSeats: "5 Seats",
       GearboxType: "Auto",
@@ -27,7 +27,7 @@ const PopularCar = () => {
     {
       id: "02",
       CarTitle: "Mercedes C-Class",
-      CarPrice: "150.00",
+      CarPrice: "100.00",
       CarImage: MercedesCClass,
       CarSeats: "5 Seats",
       GearboxType: "Auto",
@@ -37,7 +37,7 @@ const PopularCar = () => {
     {
       id: "03",
       CarTitle: "BMW 3",
-      CarPrice: "150.00",
+      CarPrice: "100.00",
       CarImage: Bmw3,
       CarSeats: "5 Seats",
       GearboxType: "Auto",
@@ -47,7 +47,7 @@ const PopularCar = () => {
     {
       id: "04",
       CarTitle: "BMW X3",
-      CarPrice: "150.00",
+      CarPrice: "100.00",
       CarImage: BmwX3,
       CarSeats: "5 Seats",
       GearboxType: "Auto",
@@ -57,7 +57,7 @@ const PopularCar = () => {
     {
       id: "05",
       CarTitle: "Mercedes GLB",
-      CarPrice: "150.00",
+      CarPrice: "100.00",
       CarImage: MarcedesGLB,
       CarSeats: "5 Seats",
       GearboxType: "Auto",
@@ -67,7 +67,7 @@ const PopularCar = () => {
     {
       id: "06",
       CarTitle: "Audi Q3",
-      CarPrice: "150.00",
+      CarPrice: "100.00",
       CarImage: AudiQ3,
       CarSeats: "5 Seats",
       GearboxType: "Auto",
