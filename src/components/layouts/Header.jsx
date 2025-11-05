@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Flex from "../Flex";
-import { FaRegUser, FaRegHeart } from "react-icons/fa";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { FaRegUser, FaRegHeart, FaHome, FaCar, FaBars } from "react-icons/fa";
+import { HiOutlineShoppingBag,  } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -106,14 +106,23 @@ const Header = () => {
       </div>
       {/* Mobile Header part End  */}
 
-      <div className="py-7 px-3  block lg:hidden w-full fixed bottom-0 left-0 z-10 bg-[#222222]">
-        <ul className="flex justify-between text-white">
-          <li>CARS</li>
-          <li>BLOG</li>
-          <li>ABOUT</li>
-          <li>CONTACT</li>
-          <li>PAGES</li>
-        </ul>
+      <div className="py-4 flex justify-between items-center lg:hidden w-full fixed bottom-0 left-0 z-10 bg-[#222222] ">
+        <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
+          <FaHome className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+          <p className="text-sm text-mainColor">HOME</p>
+        </div>
+        <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
+          <FaCar className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+          <p className="text-sm text-mainColor">CARS</p>
+        </div>
+        <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
+          <FaHome className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+          <p className="text-sm text-mainColor">HOME</p>
+        </div>
+        <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
+          <FaBars  className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+          <p className="text-sm text-mainColor">PAGES</p>
+        </div>
       </div>
     </>
   );

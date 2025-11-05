@@ -31,7 +31,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-b from-secondaryColor to-neutral-900 border-t-2 border-neutral-800 shadow-2xl mb-20 lg:mb-0 px-3 lg:px-0">
+    <footer className="bg-gradient-to-b from-secondaryColor to-neutral-900 border-t-2 border-neutral-800 shadow-2xl mb-16 lg:mb-0 px-3 lg:px-0">
       {/* ===== MAIN FOOTER CONTENT ===== */}
       <div className="py-10 sm:py-14 md:py-16 lg:py-20">
         <Container>

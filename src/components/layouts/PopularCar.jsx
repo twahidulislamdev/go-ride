@@ -78,7 +78,7 @@ const PopularCar = () => {
 
   //  Slider for small screens only
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -90,7 +90,7 @@ const PopularCar = () => {
 
   return (
     <>
-      <div className="py-5 bg-secondaryColor text-center">
+      <div className="py-10 bg-secondaryColor text-center">
         <h6 className="text-xs lg:text-sm text-mainColor tracking-[8px]">
           SELECT YOUR CAR
         </h6>
@@ -98,11 +98,11 @@ const PopularCar = () => {
           Our <span className="text-mainColor">Popular Cars Fleets</span>
         </h3>
 
-        <div className=" p-5 lg:pt-10 pb-5">
+        <div className=" px-5 lg:px-0 pt-5 lg:pt-10">
           <Container>
             {/*  React Slick only for small & medium devices */}
             <div className="block lg:hidden">
-              <Slider className="pb-5" {...settings}>
+              <Slider className="" {...settings}>
                 {Cars.map((item) => (
                   <div key={item.id} className="">
                     <CarCad
@@ -138,7 +138,7 @@ const PopularCar = () => {
             </div>
           </Container>
 
-          <button className="mt-10 px-4 py-2 bg-mainColor text-lg font-medium text-black rounded-xl hover:bg-white transition-all duration-300">
+          <button className="mt-5 px-4 py-2 bg-mainColor text-lg font-medium text-black rounded-xl hover:bg-white transition-all duration-300">
             See More
           </button>
         </div>
