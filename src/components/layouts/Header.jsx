@@ -1,8 +1,15 @@
 import React, { useEffect, useState } from "react";
 import Container from "../Container";
 import Flex from "../Flex";
-import { FaRegUser, FaRegHeart, FaHome, FaCar, FaBars } from "react-icons/fa";
-import { HiOutlineShoppingBag,  } from "react-icons/hi2";
+import {
+  FaRegUser,
+  FaRegHeart,
+  FaHome,
+  FaCar,
+  FaBars,
+  FaCalendarCheck,
+} from "react-icons/fa";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -106,7 +113,7 @@ const Header = () => {
       </div>
       {/* Mobile Header part End  */}
 
-      <div className="py-4 flex justify-between items-center lg:hidden w-full fixed bottom-0 left-0 z-10 bg-[#222222] ">
+      <div className="py-4 flex justify-between items-center lg:hidden w-full fixed bottom-0 left-0 z-99 bg-[#222222] ">
         <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
           <FaHome className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
           <p className="text-sm text-mainColor">HOME</p>
@@ -116,11 +123,11 @@ const Header = () => {
           <p className="text-sm text-mainColor">CARS</p>
         </div>
         <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
-          <FaHome className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
-          <p className="text-sm text-mainColor">HOME</p>
+          <FaCalendarCheck className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+          <p className="text-sm text-mainColor">BOOKING</p>
         </div>
         <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
-          <FaBars  className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+          <FaBars className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
           <p className="text-sm text-mainColor">PAGES</p>
         </div>
       </div>
