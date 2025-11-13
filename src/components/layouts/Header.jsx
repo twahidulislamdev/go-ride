@@ -70,7 +70,10 @@ const Header = () => {
             <div className="flex items-center gap-x-3 lg:gap-x-5">
               <div className="flex-1 mx-3 lg:mx-5 flex justify-center items-center">
                 <input
-                  className="w-[200px] lg:w-[250px] py-2 px-3 rounded-md outline-1 outline-white text-white text-sm dark:placeholder:text-white"
+                  className="w-[200px] lg:w-[250px] py-2 px-3 
+  rounded-md bg-white/5 backdrop-blur-md border border-white/20 
+  text-white text-sm placeholder:text-white/70 
+  outline-none focus:border-white/40 transition-all duration-300"
                   type="text"
                   placeholder="What are you looking?"
                 />

@@ -4,6 +4,7 @@ import Service from "../layouts/Service";
 import LuxuryCar from "../layouts/LuxuryCar";
 import Categories from "../layouts/Categories";
 import PopularCar from "../layouts/PopularCar";
+import Interested from "../layouts/Interested";
 import Brand from "../layouts/Brand";
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
       <LuxuryCar />
       <Service />
       <PopularCar />
+      <Interested />
       <Brand />
     </>
   );

@@ -96,7 +96,7 @@ const LuxuryCar = () => {
         SELECT YOUR CAR
       </h6>
       <h3 className="text-3xl lg:text-4xl font-bold text-white pt-5">
-        Our <span className="text-mainColor">Luxury Cars Fleets</span>
+        Our Luxury<span className="text-mainColor"> Cars Fleets</span>
       </h3>
 
       <div className="px-5 lg:px-0  pt-5 lg:pt-10 ">

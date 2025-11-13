@@ -55,7 +55,7 @@ const Footer = () => {
                 Your trusted partner for premium car rental services. Experience
                 luxury, comfort, and reliability on every journey.
               </p>
-              
+
               {/* Contact Info */}
               <div className="space-y-3 mb-8">
                 {contactInfo.map((item, index) => (

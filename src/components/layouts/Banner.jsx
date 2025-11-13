@@ -31,7 +31,7 @@ const Banner = () => {
           <button className="relative  px-4 lg:px-8 py-2.5 lg:py-3.5 bg-mainColor text-md lg:text-lg text-black rounded-xl hover:bg-white  transition-all duration-300 hover:cursor-pointer">
             View Details
           </button>
-          <button className="relative  px-5 lg:px-8 py-2 lg:py-3.5 bg-transparent text-md lg:text-lg text-white rounded-2xl outline-2 outline-white hover:bg-white hover:text-black transition-all duration-300 hover:cursor-pointer">
+          <button className="relative px-5 lg:px-8 py-2 lg:py-3.5 bg-white/10 backdrop-blur-md border border-white/10 text-md lg:text-lg text-white rounded-2xl outline-none transition-all duration-300 hover:scale-105 hover:border-white/40 hover:bg-white hover:text-black cursor-pointer">
             Book Now
           </button>
         </div>
