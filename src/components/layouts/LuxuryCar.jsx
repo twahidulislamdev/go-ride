@@ -139,8 +139,11 @@ const LuxuryCar = () => {
           </div>
         </Container>
 
-        <button className="mt-5 px-4 py-2 bg-mainColor text-lg font-medium text-black rounded-xl hover:bg-white transition-all duration-300">
-          See More
+        <button className="relative mt-3 lg:mt-7 text-lg text-mainColor font-medium pb-2 group hover:cursor-pointer">
+          <span className="group-hover:text-white transition-colors duration-300">
+            SEE MORE
+          </span>
+          <span className="absolute left-0 bottom-0 h-0.5 bg-mainColor w-1/3 group-hover:bg-white group-hover:w-full transition-all duration-300 ease-in-out"></span>
         </button>
       </div>
     </div>

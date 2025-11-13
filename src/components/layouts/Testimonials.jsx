@@ -61,7 +61,7 @@ const Testimonials = () => {
           <h3 className="text-3xl lg:text-4xl font-bold text-white mt-4">
             What Our <span className="text-mainColor">Clients Say!</span>
           </h3>
-          <p className="text-gray-400 mt-4 max-w-xl mx-auto text-sm lg:text-base px-3">
+          <p className="text-gray-400 mt-4 max-w-xl mx-auto text-sm lg:text-base px-3 lg:px-0">
             Hear from our happy clients who’ve experienced our quality, care, and dedication firsthand.
           </p>
         </div>
