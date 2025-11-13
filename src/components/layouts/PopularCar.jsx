@@ -98,7 +98,7 @@ const PopularCar = () => {
           Our Popular<span className="text-mainColor"> Cars Fleets</span>
         </h3>
 
-        <div className=" px-5 lg:px-0 pt-5 lg:pt-10">
+        <div className="px-5 lg:px-0 pt-5 lg:pt-10">
           <Container>
             {/*  React Slick only for small & medium devices */}
             <div className="block lg:hidden">

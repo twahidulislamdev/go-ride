@@ -6,6 +6,7 @@ import Categories from "../layouts/Categories";
 import PopularCar from "../layouts/PopularCar";
 import Interested from "../layouts/Interested";
 import Brand from "../layouts/Brand";
+import Testimonials from "../layouts/Testimonials";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
       <Service />
       <PopularCar />
       <Interested />
+      <Testimonials />
       <Brand />
     </>
   );

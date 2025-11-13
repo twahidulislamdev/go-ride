@@ -39,7 +39,7 @@ const Interested = () => {
   transition-all duration-300 cursor-pointer shadow-md"
             >
               <FaWhatsapp className="text-lg lg:text-xl" />
-              <span>View Details</span>
+              <span>WhatsApp</span>
             </button>
 
             <button
