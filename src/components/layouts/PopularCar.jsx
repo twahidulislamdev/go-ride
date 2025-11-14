@@ -7,7 +7,7 @@ import Bmw3 from "../../assets/bmw3.png";
 import BmwX3 from "../../assets/bmwX3.png";
 import MarcedesGLB from "../../assets/marcedesGLB.png";
 import AudiQ3 from "../../assets/audiQ3.png";
-import CarCad from "../CarCad";
+import HomeCar from "../HomeCar";
 
 //  Import slick CSS
 import "slick-carousel/slick/slick.css";
@@ -105,7 +105,7 @@ const PopularCar = () => {
               <Slider className="" {...settings}>
                 {Cars.map((item) => (
                   <div key={item.id} className="">
-                    <CarCad
+                    <HomeCar
                       id={item.id}
                       CarTitle={item.CarTitle}
                       CarPrice={item.CarPrice}
@@ -123,7 +123,7 @@ const PopularCar = () => {
             {/*  Grid layout only for lg+ screens */}
             <div className="hidden lg:grid grid-cols-3 gap-5">
               {Cars.map((item) => (
-                <CarCad
+                <HomeCar
                   key={item.id}
                   id={item.id}
                   CarTitle={item.CarTitle}

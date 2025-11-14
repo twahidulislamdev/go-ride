@@ -117,18 +117,23 @@ const Header = () => {
       {/* Mobile Header part End  */}
 
       <div className="py-4 flex justify-between items-center lg:hidden w-full fixed bottom-0 left-0 z-99 bg-[#222222] ">
-        <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
-          <FaHome className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
-          <p className="text-sm text-mainColor">HOME</p>
-        </div>
-        <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
-          <FaCar className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
-          <p className="text-sm text-mainColor">CARS</p>
-        </div>
+        <Link to="/" className="w-[23%]">
+          <div className=" mx-auto flex flex-col justify-center items-center">
+            <FaHome className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+            <p className="text-sm text-mainColor">HOME</p>
+          </div>
+        </Link>
+        <Link to="/cars" className="w-[23%]">
+          <div className=" mx-auto flex flex-col justify-center items-center">
+            <FaCar className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
+            <p className="text-sm text-mainColor">CARS</p>
+          </div>
+        </Link>
         <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
           <FaCalendarCheck className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
           <p className="text-sm text-mainColor">BOOKING</p>
         </div>
+
         <div className="w-[23%] mx-auto flex flex-col justify-center items-center">
           <FaBars className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
           <p className="text-sm text-mainColor">PAGES</p>

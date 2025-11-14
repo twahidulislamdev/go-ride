@@ -25,8 +25,21 @@ const Service = () => {
     { id: "06", title: "Fleet Leasing", img: serviceSix },
   ];
 
+  // 🔵 CUSTOM DOTS DESIGN
+  const customDots = {
+    dots: true,
+    appendDots: dots => (
+      <div>
+        <ul className="custom-dots mt-6"> {dots} </ul>
+      </div>
+    ),
+    customPaging: () => (
+      <div className="w-3 h-3 rounded-full bg-white/25"></div>
+    ),
+  };
+
   const smallDeviceSettings = {
-    dots: false,
+    ...customDots,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -37,7 +50,7 @@ const Service = () => {
   };
 
   const largeDeviceSettings = {
-    dots: false,
+    ...customDots,
     infinite: true,
     speed: 650,
     slidesToShow: 3,
@@ -73,7 +86,7 @@ const Service = () => {
         <Container>
           {/* Mobile Slider */}
           <div className="block lg:hidden">
-            <Slider {...smallDeviceSettings}>
+            <Slider className="pb-5" {...smallDeviceSettings}>
               {services.map((s) => (
                 <div key={s.id} className="px-3">
                   <ServiceCard id={s.id} title={s.title} img={s.img} />
@@ -84,7 +97,7 @@ const Service = () => {
 
           {/* Desktop Slider */}
           <div className="hidden lg:block">
-            <Slider {...largeDeviceSettings}>
+            <Slider className="pb-5" {...largeDeviceSettings}>
               {services.map((s) => (
                 <div key={s.id} className="px-3">
                   <ServiceCard id={s.id} title={s.title} img={s.img} />
