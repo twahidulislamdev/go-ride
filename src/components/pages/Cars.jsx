@@ -16,14 +16,17 @@ const Cars = () => {
       <div>
         {/* Banner */}
         <div
-          className="relative py-[30px] lg:py-[230px] w-full  bg-no-repeat bg-center bg-cover"
+          className="relative py-[100px] lg:py-[230px] w-full  bg-no-repeat bg-center bg-cover"
           style={{ backgroundImage: `url(${BankgroundOne})` }}
         >
           <div className="absolute inset-0 bg-black/55"></div>
 
           <div className="relative z-10">
-            <h3 className="text-2xl lg:text-7xl font-bold text-center text-mainColor">
-              THE SHOP
+            <h6 className="text-sm text-mainColor tracking-[8px] text-center">
+              RENT NOW
+            </h6>
+            <h3 className="text-3xl lg:text-4xl text-center font-bold text-white pt-5">
+              Select <span className="text-mainColor">Luxury Car</span>
             </h3>
           </div>
         </div>
@@ -40,6 +43,7 @@ const Cars = () => {
               <div className="w-full lg:w-[65%]">
                 {/* Products */}
                 <div className="">
+                  
                   <Flex className="justify-between flex-wrap gap-y-10">
                     <ShopCar
                       car={{
@@ -111,8 +115,8 @@ const Cars = () => {
                 </div>
 
                 {/* Pagination start */}
-                <div className="flex justify-center mt-10">
-                  <ul className="flex items-center gap-3">
+                <div className="flex justify-center mt-10 mx-3 lg:mx-0">
+                  <ul className="flex  justify-between items-center gap-3 flex-wrap">
                     {/* Prev Button */}
                     <li className="px-4 py-2 border border-mainColor text-mainColor rounded-lg cursor-pointer hover:bg-mainColor hover:text-white transition">
                       Prev

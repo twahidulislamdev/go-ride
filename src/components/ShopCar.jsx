@@ -7,7 +7,7 @@ import { PiSuitcaseSimpleFill } from "react-icons/pi";
 const ShopCar = ({ car }) => {
   return (
     <>
-      <div className="w-[48%] h-[500px] bg-neutralColor rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+      <div className="w-full lg:w-[48%] h-[500px] bg-neutralColor rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition mx-5 lg:mx-0">
         {/* Image */}
         <img
           src={car.image}

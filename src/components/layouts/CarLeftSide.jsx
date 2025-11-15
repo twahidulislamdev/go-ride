@@ -26,7 +26,7 @@ const CarLeftSide = () => {
   ];
 
   return (
-    <div className="w-[30%] h-[800px] bg-neutralColor rounded-t-3xl text-white font-sans">
+    <div className="w-[30%] h-[800px] hidden lg:block bg-neutralColor rounded-t-3xl text-white font-sans">
       {/* Search Bar */}
       <div className="bg-mainColor rounded-t-3xl px-6 py-4">
         <div className="relative max-w-md mx-auto">
