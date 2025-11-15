@@ -2,17 +2,20 @@ import { IoFilter } from "react-icons/io5";
 import Container from "../Container";
 import Flex from "../Flex";
 import BankgroundOne from "../../assets/backgroundOne.jpg";
-import HomeCar from "../HomeCar";
 import ShopCar from "../ShopCar";
 import CarLeftSide from "../layouts/CarLeftSide";
 
+import LamborghiniUrus from "../../assets/LamborghiniUrus.jpg";
+import astonMartinDbx from "../../assets/astonMartinDbx.jpg";
+import BugattiMistralW16 from "../../assets/BugattiMistralW16.jpg";
+import BentleyContinental from "../../assets/BentleyContinental.jpg";
 const Cars = () => {
   return (
     <>
       <div>
         {/* Banner */}
         <div
-          className="relative py-[30px] lg:py-[230px] w-full px-3 bg-no-repeat bg-center bg-cover"
+          className="relative py-[30px] lg:py-[230px] w-full  bg-no-repeat bg-center bg-cover"
           style={{ backgroundImage: `url(${BankgroundOne})` }}
         >
           <div className="absolute inset-0 bg-black/55"></div>
@@ -39,8 +42,8 @@ const Cars = () => {
                   <Flex className="justify-between flex-wrap gap-y-10">
                     <ShopCar
                       car={{
-                        name: "Car 1",
-                        image: "image1.jpg",
+                        name: "Lamborghini Urus",
+                        image: LamborghiniUrus,
                         doors: 4,
                         passengers: 5,
                         transmission: "Automatic",
@@ -50,8 +53,8 @@ const Cars = () => {
                     />
                     <ShopCar
                       car={{
-                        name: "Car 2",
-                        image: "image2.jpg",
+                        name: "Aston Martin DBX",
+                        image: astonMartinDbx,
                         doors: 2,
                         passengers: 4,
                         transmission: "Manual",
@@ -61,10 +64,10 @@ const Cars = () => {
                     />
                     <ShopCar
                       car={{
-                        name: "Car 3",
-                        image: "image3.jpg",
-                        doors: 4,
-                        passengers: 5,
+                        name: "Bugatti Mistral W16",
+                        image: BugattiMistralW16,
+                        doors: 2,
+                        passengers: 2,
                         transmission: "Automatic",
                         luggage: 4,
                         price: 200,
@@ -72,8 +75,8 @@ const Cars = () => {
                     />
                     <ShopCar
                       car={{
-                        name: "Car 4",
-                        image: "image4.jpg",
+                        name: "Bentley Continental",
+                        image: BentleyContinental,
                         doors: 4,
                         passengers: 7,
                         transmission: "Manual",

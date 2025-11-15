@@ -7,19 +7,21 @@ import { PiSuitcaseSimpleFill } from "react-icons/pi";
 const ShopCar = ({ car }) => {
   return (
     <>
-      <div className="w-[48%] h-[550px] bg-neutralColor rounded-2xl overflow-hidden shadow-md p-5 hover:shadow-xl transition mb-8">
+      <div className="w-[48%] h-[500px] bg-neutralColor rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
         {/* Image */}
         <img
           src={car.image}
           alt={car.name}
-          className="rounded-xl w-full h-[220px] object-cover"
+          className="rounded-t-xl w-full h-[230px] object-cover"
         />
 
         {/* Title */}
-        <h3 className="text-white text-2xl font-semibold mt-5">{car.name}</h3>
+        <h3 className="text-white text-2xl font-semibold mt-3 px-3">
+          {car.name}
+        </h3>
 
         {/* Features */}
-        <div className="mt-5 space-y-3">
+        <div className="mt-3 space-y-3 px-3">
           {/* Doors */}
           <div className="flex items-center justify-between text-white/80">
             <div className="flex items-center gap-2">
@@ -58,13 +60,13 @@ const ShopCar = ({ car }) => {
         </div>
 
         {/* Price + Button */}
-        <div className="mt-8 flex justify-between items-center">
+        <div className="mt-5 flex justify-between items-center px-3">
           <h3 className="text-[#e9b04f] text-2xl font-bold">
             ${car.price}{" "}
             <span className="text-white text-lg font-medium">/ day</span>
           </h3>
 
-          <button className="bg-[#e9b04f] px-8 py-3 rounded-full text-black font-medium hover:bg-[#d49a43] transition">
+          <button className="bg-[#e9b04f] px-8 py-3 rounded-full text-black font-medium hover:bg-[#d49a43] transition hover:cursor-pointer">
             Details
           </button>
         </div>
