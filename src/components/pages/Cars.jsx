@@ -1,14 +1,15 @@
 import { IoFilter } from "react-icons/io5";
 import Container from "../Container";
 import Flex from "../Flex";
-import BankgroundOne from "../../assets/backgroundOne.jpg";
 import ShopCar from "../ShopCar";
 import CarLeftSide from "../layouts/CarLeftSide";
 
+import BankgroundOne from "../../assets/backgroundOne.jpg";
 import LamborghiniUrus from "../../assets/LamborghiniUrus.jpg";
 import astonMartinDbx from "../../assets/astonMartinDbx.jpg";
 import BugattiMistralW16 from "../../assets/BugattiMistralW16.jpg";
 import BentleyContinental from "../../assets/BentleyContinental.jpg";
+import RollsRoyceCullinan from "../../assets/RollsRoyceCullinan.jpg";
 const Cars = () => {
   return (
     <>
@@ -69,7 +70,7 @@ const Cars = () => {
                         doors: 2,
                         passengers: 2,
                         transmission: "Automatic",
-                        luggage: 4,
+                        luggage: 2,
                         price: 200,
                       }}
                     />
@@ -78,7 +79,29 @@ const Cars = () => {
                         name: "Bentley Continental",
                         image: BentleyContinental,
                         doors: 4,
-                        passengers: 7,
+                        passengers: 4,
+                        transmission: "Manual",
+                        luggage: 2,
+                        price: 250,
+                      }}
+                    />
+                    <ShopCar
+                      car={{
+                        name: "Rolls Royce Cullinan",
+                        image: RollsRoyceCullinan,
+                        doors: 4,
+                        passengers: 5,
+                        transmission: "Manual",
+                        luggage: 5,
+                        price: 250,
+                      }}
+                    />
+                    <ShopCar
+                      car={{
+                        name: "Bentley Bentayga",
+                        image: BankgroundOne,
+                        doors: 4,
+                        passengers: 5,
                         transmission: "Manual",
                         luggage: 5,
                         price: 250,
