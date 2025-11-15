@@ -43,7 +43,6 @@ const Cars = () => {
               <div className="w-full lg:w-[65%]">
                 {/* Products */}
                 <div className="">
-                  
                   <Flex className="justify-between flex-wrap gap-y-10">
                     <ShopCar
                       car={{
@@ -84,7 +83,7 @@ const Cars = () => {
                         image: BentleyContinental,
                         doors: 4,
                         passengers: 4,
-                        transmission: "Manual",
+                        transmission: "Automatic",
                         luggage: 2,
                         price: 250,
                       }}
@@ -95,7 +94,7 @@ const Cars = () => {
                         image: RollsRoyceCullinan,
                         doors: 4,
                         passengers: 5,
-                        transmission: "Manual",
+                        transmission: "Automatic",
                         luggage: 5,
                         price: 250,
                       }}
@@ -106,7 +105,7 @@ const Cars = () => {
                         image: BankgroundOne,
                         doors: 4,
                         passengers: 5,
-                        transmission: "Manual",
+                        transmission: "Automatic",
                         luggage: 5,
                         price: 250,
                       }}
