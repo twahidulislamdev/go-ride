@@ -16,7 +16,7 @@ const Cars = () => {
       <div>
         {/* Banner */}
         <div
-          className="relative py-[100px] lg:py-[230px] w-full  bg-no-repeat bg-center bg-cover"
+          className="relative py-[90px] lg:py-[230px] w-full  bg-no-repeat bg-center bg-cover"
           style={{ backgroundImage: `url(${BankgroundOne})` }}
         >
           <div className="absolute inset-0 bg-black/55"></div>
@@ -25,14 +25,14 @@ const Cars = () => {
             <h6 className="text-sm text-mainColor tracking-[8px] text-center">
               RENT NOW
             </h6>
-            <h3 className="text-3xl lg:text-4xl text-center font-bold text-white pt-5">
+            <h3 className="text-3xl lg:text-4xl text-center font-bold text-white pt-3">
               Select <span className="text-mainColor">Luxury Car</span>
             </h3>
           </div>
         </div>
 
         {/* Shop Section */}
-        <div className="relative py-[60px] bg-secondaryColor">
+        <div className="relative py-[30px] lg:py-[50px] bg-secondaryColor">
           <Container>
             <Flex className="justify-between gap-x-5">
               {/*Left Sidebar start */}
@@ -41,8 +41,16 @@ const Cars = () => {
 
               {/* Product Section start  */}
               <div className="w-full lg:w-[65%]">
+                <div className="flex justify-between items-center lg:hidden mx-5 lg:mx-0 mb-5 lg:mb-0 ">
+                  <button className="px-5 py-2.5 lg:py-3 border-2 border-mainColor text-md   text-mainColor font-medium rounded-xl bg-transparent transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer shadow-sm">
+                    FILTER BY
+                  </button>
+                  <button className="px-5 py-2.5 lg:py-3 border-2 border-mainColor text-md   text-mainColor font-medium rounded-xl bg-transparent transition-all duration-300 ease-in-out hover:scale-105 cursor-pointer shadow-sm">
+                    SHORT BY
+                  </button>
+                </div>
                 {/* Products */}
-                <div className="">
+                <div className="mx-5 lg:mx-0">
                   <Flex className="justify-between flex-wrap gap-y-10">
                     <ShopCar
                       car={{
@@ -81,10 +89,10 @@ const Cars = () => {
                       car={{
                         name: "Bentley Continental",
                         image: BentleyContinental,
-                        doors: 4,
-                        passengers: 4,
+                        doors: 2,
+                        passengers: 2,
                         transmission: "Automatic",
-                        luggage: 2,
+                        luggage: 3,
                         price: 250,
                       }}
                     />
@@ -95,7 +103,7 @@ const Cars = () => {
                         doors: 4,
                         passengers: 5,
                         transmission: "Automatic",
-                        luggage: 5,
+                        luggage: 4,
                         price: 250,
                       }}
                     />
@@ -106,7 +114,7 @@ const Cars = () => {
                         doors: 4,
                         passengers: 5,
                         transmission: "Automatic",
-                        luggage: 5,
+                        luggage: 4,
                         price: 250,
                       }}
                     />

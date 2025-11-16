@@ -12,7 +12,7 @@ const Banner = () => {
       <div className="absolute inset-0 bg-black/55"></div>
 
       {/* Banner Content */}
-      <Container className={"pt-40 lg:pt-0"}>
+      <Container className={"pt-30 lg:pt-0 pl-2 lg:pl-0"}>
         <h5 className=" relative text-sm lg:text-lg text-mainColor tracking-[5px]">
           - PREMIUM
         </h5>

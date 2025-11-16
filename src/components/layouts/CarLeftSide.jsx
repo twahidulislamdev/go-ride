@@ -3,8 +3,8 @@ import { Search } from "lucide-react";
 
 const CarLeftSide = () => {
   const [search, setSearch] = useState("");
-  const [selectedBrand, setSelectedBrand] = useState("Lamborghini");
-  const [selectedCarType, setSelectedCarType] = useState("Luxary");
+  const [selectedBrand, setSelectedBrand] = useState("");
+  const [selectedCarType, setSelectedCarType] = useState("");
 
   const brands = [
     "Lamborghini",
