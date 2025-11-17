@@ -25,7 +25,7 @@ const Service = () => {
     { id: "06", title: "Fleet Leasing", img: serviceSix },
   ];
 
-  // 🔵 CUSTOM DOTS DESIGN
+  //  CUSTOM DOTS DESIGN
   const customDots = {
     dots: true,
     appendDots: dots => (
