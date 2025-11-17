@@ -3,6 +3,7 @@ import "./App.css";
 import RootLayout from "./components/layouts/RootLayout";
 import Home from "./components/pages/Home";
 import Cars from "./components/pages/Cars";
+import LuxuryCarCategory from "./components/pages/LuxuryCarCategory";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<RootLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/cars" element={<Cars />} />
+            <Route path="/luxuryCarCategory" element={<LuxuryCarCategory />} />
           </Route>
         </Routes>
       </BrowserRouter>

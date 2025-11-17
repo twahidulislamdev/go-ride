@@ -15,20 +15,26 @@ const ServiceCard = ({ img, title, id }) => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent 
-                      lg:group-hover:from-black/90 transition-all duration-500"></div>
+      <div
+        className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent 
+                      lg:group-hover:from-black/90 transition-all duration-500"
+      ></div>
 
       {/* Bottom Content */}
       <div className="absolute bottom-5 left-5 flex items-center gap-4">
         {/* ID Circle */}
-        <div className="relative bg-[#121212] border border-yellow-500 text-white text-lg 
+        <div
+          className="relative bg-[#121212] border border-yellow-500 text-white text-lg 
                         font-semibold rounded-full w-14 h-14 flex items-center justify-center
-                        shadow-lg lg:group-hover:shadow-yellow-500/30 transition-all duration-500">
+                        shadow-lg lg:group-hover:shadow-yellow-500/30 transition-all duration-500"
+        >
           {id}
 
           {/* Soft glow on hover */}
-          <span className="absolute inset-0 rounded-full bg-yellow-500/10 blur-xl opacity-0 
-                           lg:group-hover:opacity-100 transition-opacity duration-500"></span>
+          <span
+            className="absolute inset-0 rounded-full bg-yellow-500/10 blur-xl opacity-0 
+                           lg:group-hover:opacity-100 transition-opacity duration-500"
+          ></span>
         </div>
 
         {/* Title */}
