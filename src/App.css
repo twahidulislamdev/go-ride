@@ -8,6 +8,17 @@
   --color-neutralColor: #222222;
 }
 
+/* color for custom dot */
 .custom-dots li.slick-active div {
   @apply bg-mainColor;
+}
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.scrollbar-hide {
+  scrollbar-width: none;
 }
