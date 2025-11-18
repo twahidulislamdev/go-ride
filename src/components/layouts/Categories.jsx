@@ -9,11 +9,22 @@ import CategoryFour from "../../assets/categoryFour.png";
 import CategoryFive from "../../assets/categoryFive.png";
 import CategorySix from "../../assets/categorySix.png";
 import CategoriesCard from "../CategoriesCard";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
   const category = [
-    { id: "1", title: "Luxury Car", img: CategoryOne },
-    { id: "2", title: "Sports Car", img: CategoryTwo },
+    {
+      id: "1",
+      title: "Luxury Car",
+      img: CategoryOne,
+      path: "/luxuryCarCategory",
+    },
+    {
+      id: "2",
+      title: "Sports Car",
+      img: CategoryTwo,
+      path: "/sportsCarCategory",
+    },
     { id: "3", title: "Sedan", img: CategoryThree },
     { id: "4", title: "SUV", img: CategoryFour },
     { id: "5", title: "Small Car", img: CategorySix },
@@ -32,12 +43,13 @@ const Categories = () => {
         <Container className={"mt-10 px-3"}>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
             {category.map((item) => (
-              <CategoriesCard
-                key={item.id}
-                id={item.id}
-                title={item.title}
-                img={item.img}
-              />
+              <Link key={item.id} to={item.path}>
+                <CategoriesCard
+                  id={item.id}
+                  title={item.title}
+                  img={item.img}
+                />
+              </Link>
             ))}
           </div>
         </Container>
