@@ -1,67 +1,66 @@
 import React from "react";
-import { HiArrowUpRight } from "react-icons/hi2";
+import { FaUserFriends } from "react-icons/fa";
+import { GiGearStick } from "react-icons/gi";
+import { PiSuitcaseSimpleFill } from "react-icons/pi";
 
-const NevigateByCategoryCard = ({ img, title, price }) => {
+const NevigateByCategoryCard = ({ car }) => {
   return (
-    <>
-      <div
-        className="relative  rounded-2xl overflow-hidden group shadow-xl 
-                 hover:shadow-2xl lg:hover:-translate-y-1 transition-all duration-500"
-      >
-        {/* Image */}
+    <div className="w-full relative">
+      {/* IMAGE */}
+      <div className="w-full h-[300px] lg:h-[350px] overflow-hidden rounded-3xl">
         <img
-          src={img}
-          alt={title}
-          className="w-full h-full object-cover transform 
-                   lg:group-hover:scale-105 transition-transform duration-700"
+          src={car.image}
+          alt={car.name}
+          className="w-full h-full object-cover"
         />
+      </div>
 
-        {/* Overlay */}
-        <div
-          className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent 
-                      lg:group-hover:from-black/90 transition-all duration-500"
-        ></div>
+      {/* BOTTOM CARD (OVERLAY) */}
+      <div
+        className="absolute left-1/2 -translate-x-1/2 -bottom-10 lg:bottom-3 
+                      bg-neutralColor w-[90%] shadow-lg rounded-3xl 
+                      p-5 flex flex-col lg:flex-row justify-between 
+                      items-center gap-3 lg:gap-6"
+      >
+        {/* LEFT SIDE */}
+        <div>
+          <h2 className="text-center lg:text-start text-white text-2xl font-semibold">{car.name}</h2>
 
-        {/* Bottom Content */}
-        <div className="absolute bottom-5 left-5 flex items-center gap-4">
-          <div
-            className="relative group bg-[#121212] border border-yellow-500 text-white 
-                rounded-full w-18 h-18 flex flex-col items-center justify-center
-                shadow-lg transition-all duration-500 overflow-hidden"
-          >
-            {/* Price */}
-            <h3 className="text-mainColor text-lg font-semibold leading-none z-10">
-              ${price}
-            </h3>
+          <div className="flex items-center gap-6 mt-3 text-white/70 text-[15px]">
+            <div className="flex items-center gap-2">
+              <FaUserFriends className="text-mainColor" />
+              <span>{car.passengers} Seats</span>
+            </div>
 
-            {/* Day text */}
-            <p className="text-xs text-gray-300 mt-[3px] leading-none z-10">
-              Day
-            </p>
+            <div className="flex items-center gap-2">
+              <GiGearStick className="text-mainColor" />
+              <span>{car.transmission}</span>
+            </div>
 
-            {/* Yellow background + Arrow */}
-            <div
-              className="absolute inset-0 bg-mainColor opacity-0 
-               group-hover:opacity-100 transition-opacity duration-500
-               flex items-center justify-center z-20"
-            >
-              <HiArrowUpRight className="text-black text-2xl " />
+            <div className="flex items-center gap-2">
+              <PiSuitcaseSimpleFill className="text-mainColor" />
+              <span>{car.luggage} Bags</span>
             </div>
           </div>
+        </div>
 
-          {/* Title */}
-          <h6 className="text-white text-2xl font-bold drop-shadow-lg">
-            {title}
-          </h6>
+        {/* RIGHT SIDE */}
+        <div className="flex flex-row-reverse lg:flex lg:flex-row items-center gap-5">
+          <button className="bg-mainColor text-black px-6 py-2 lg:py-3 rounded-full font-medium hover:bg-[#d29a3a] transition hover:cursor-pointer">
+            Details
+          </button>
+
+          <div className="text-right flex  items-center lg:flex-col lg:items-end space-x-1.5 lg:space-x-0">
+            <h3 className="text-mainColor text-3xl font-bold">${car.price}</h3>
+            <p className="text-white/70 text-sm">/day</p>
+          </div>
         </div>
       </div>
-    </>
+
+      {/* SPACING FIX */}
+      <div className="h-15"></div>
+    </div>
   );
 };
 
 export default NevigateByCategoryCard;
-
-//   <span
-//               className="absolute inset-0 rounded-full bg-yellow-500/10 blur-xl opacity-0
-//                lg:group-hover:opacity-100 transition-opacity duration-500"
-//             ></span>

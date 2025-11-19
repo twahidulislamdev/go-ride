@@ -162,7 +162,7 @@ const Cars = () => {
       <div className="py-[30px] lg:py-[50px] bg-secondaryColor">
         <Container>
           <Flex className="justify-center lg:justify-between gap-x-5 ">
-            {/* Sidebar */}
+            {/*Car Sidebar start */}
             <div
               className={`fixed top-0 left-0 h-full w-[80%] lg:w-[30%] lg:h-[900px] bg-neutralColor z-50 transition-transform duration-300 rounded-none lg:static lg:translate-x-0 rounded-t-3xl overflow-y-auto lg:overflow-hidden scrollbar-hide pb-20 lg:pb-0 ${
                 isSidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -299,6 +299,7 @@ const Cars = () => {
                 </div>
               </div>
             </div>
+            {/*Car Sidebar End */}
 
             {/* Mobile Overlay + Close */}
             {isSidebarOpen && (
@@ -309,7 +310,7 @@ const Cars = () => {
                 />
                 <button
                   onClick={() => setIsSidebarOpen(false)}
-                  className="fixed top-9.5 right-4 z-[40] bg-mainColor p-3 rounded shadow-lg hover:bg-mainColor/90 transition lg:hidden"
+                  className="fixed top-9.5 right-4  bg-mainColor p-3 rounded shadow-lg hover:bg-mainColor/90 transition lg:hidden"
                 >
                   <GrClose size={22} className="text-white" />
                 </button>

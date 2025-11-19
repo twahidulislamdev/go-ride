@@ -42,7 +42,7 @@ const Header = () => {
     <>
       {/* Desktop Header part start  */}
       <div
-        className={`hidden lg:block fixed top-0 left-0 right-0 py-5 w-full z-20 transition-all duration-300 ${
+        className={`hidden lg:block fixed top-0 left-0 right-0 py-5 w-full z-99 transition-all duration-300 ${
           isScrolled
             ? "bg-secondaryColor backdrop-blur-md shadow-md transition-ease-in-out transition-all duration-200"
             : "bg-transparent"
@@ -116,7 +116,7 @@ const Header = () => {
       </div>
       {/* Mobile Header part End  */}
 
-      <div className="py-4 flex justify-between items-center lg:hidden w-full fixed bottom-0 left-0 z-99 bg-[#222222] ">
+      <div className="py-4 flex justify-between items-center lg:hidden w-full fixed bottom-0 left-0 z-99 bg-neutralColor ">
         <Link to="/" className="w-[23%]">
           <div className=" mx-auto flex flex-col justify-center items-center">
             <FaHome className="text-mainColor text-2xl  pb-1.5 cursor-pointer" />
