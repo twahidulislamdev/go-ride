@@ -32,7 +32,7 @@ const Cars = () => {
   ];
 
   const carTypes = [
-    "Luxury Car",
+    "Luxury",
     "Sports Car",
     "Sedan",
     "SUVs",
@@ -46,7 +46,7 @@ const Cars = () => {
     {
       name: "Lamborghini Urus",
       brand: "Lamborghini",
-      type: "SUVs",
+      type: ["SUVs", "Luxury"], // MULTIPLE TYPES ✔
       image: LamborghiniUrus,
       doors: 4,
       passengers: 5,
@@ -57,7 +57,7 @@ const Cars = () => {
     {
       name: "Aston Martin DBX",
       brand: "Aston Martin",
-      type: "SUVs",
+      type: ["SUVs"], // CHANGED to array for consistency ✔
       image: astonMartinDbx,
       doors: 2,
       passengers: 4,
@@ -68,7 +68,7 @@ const Cars = () => {
     {
       name: "Bugatti Mistral W16",
       brand: "Bugatti",
-      type: "Sports Car",
+      type: ["Sports Car"],
       image: BugattiMistralW16,
       doors: 2,
       passengers: 2,
@@ -79,7 +79,7 @@ const Cars = () => {
     {
       name: "Bentley Continental",
       brand: "Bentley",
-      type: "Sports Car",
+      type: ["Sports Car"],
       image: BentleyContinental,
       doors: 2,
       passengers: 2,
@@ -90,7 +90,7 @@ const Cars = () => {
     {
       name: "Rolls Royce Cullinan",
       brand: "Rolls-Royce",
-      type: "SUVs",
+      type: ["SUVs"],
       image: RollsRoyceCullinan,
       doors: 4,
       passengers: 5,
@@ -101,7 +101,7 @@ const Cars = () => {
     {
       name: "Bentley Bentayga",
       brand: "Bentley",
-      type: "SUVs",
+      type: ["SUVs", "Luxury"],
       image: BankgroundOne,
       doors: 4,
       passengers: 5,
@@ -111,30 +111,33 @@ const Cars = () => {
     },
   ];
 
-  // Stop scrolling ONLY on mobile (lg < 1024px)
+  // Stop scrolling on mobile when sidebar is open
   useEffect(() => {
     const handleScrollLock = () => {
       const isMobile = window.matchMedia("(max-width: 1023px)").matches;
-      if (isMobile && isSidebarOpen) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "unset";
-      }
+      document.body.style.overflow =
+        isMobile && isSidebarOpen ? "hidden" : "unset";
     };
 
     handleScrollLock();
     window.addEventListener("resize", handleScrollLock);
-
     return () => {
       document.body.style.overflow = "unset";
       window.removeEventListener("resize", handleScrollLock);
     };
   }, [isSidebarOpen]);
 
+  // 🔥 FILTER LOGIC (Supports both single & multi-type)
   const filteredCars = products.filter((car) => {
     const matchesSearch = car.name.toLowerCase().includes(search.toLowerCase());
     const matchesBrand = selectedBrand ? car.brand === selectedBrand : true;
-    const matchesType = selectedCarType ? car.type === selectedCarType : true;
+
+    const matchesType = selectedCarType
+      ? Array.isArray(car.type)
+        ? car.type.includes(selectedCarType)
+        : car.type === selectedCarType
+      : true;
+
     const matchesTransmission = selectTransmission
       ? car.transmission === selectTransmission
       : true;
@@ -162,7 +165,7 @@ const Cars = () => {
       <div className="py-[30px] lg:py-[50px] bg-secondaryColor">
         <Container>
           <Flex className="justify-center lg:justify-between gap-x-5 ">
-            {/*Car Sidebar start */}
+            {/* Sidebar */}
             <div
               className={`fixed top-0 left-0 h-full w-[80%] lg:w-[30%] lg:h-[900px] bg-neutralColor z-50 transition-transform duration-300 rounded-none lg:static lg:translate-x-0 rounded-t-3xl overflow-y-auto lg:overflow-hidden scrollbar-hide pb-20 lg:pb-0 ${
                 isSidebarOpen ? "translate-x-0" : "-translate-x-full"
@@ -179,7 +182,7 @@ const Cars = () => {
                     className="w-full bg-neutralColor text-white placeholder-gray-400 rounded-full py-3 pl-6 pr-14 text-lg focus:outline-none"
                   />
                   <button
-                    onClick={() => setIsSidebarOpen(false)} // Close mobile sidebar on search
+                    onClick={() => setIsSidebarOpen(false)}
                     className="absolute right-1 top-1/2 -translate-y-1/2 bg-mainColor rounded-full p-3"
                   >
                     <Search size={20} />
@@ -187,7 +190,7 @@ const Cars = () => {
                 </div>
               </div>
 
-              {/* Brand Filter */}
+              {/* BRAND FILTER */}
               <div className="mt-5 px-5">
                 <h2 className="text-2xl text-white font-bold mb-3">
                   Select Brand
@@ -198,7 +201,11 @@ const Cars = () => {
                     return (
                       <div
                         key={brand}
-                        onClick={() => setSelectedBrand(brand)}
+                        onClick={() =>
+                          setSelectedBrand((prev) =>
+                            prev === brand ? "" : brand
+                          )
+                        }
                         className="flex items-center space-x-4 cursor-pointer"
                       >
                         <div
@@ -225,7 +232,7 @@ const Cars = () => {
                 </div>
               </div>
 
-              {/* Car Type Filter */}
+              {/* CAR TYPE FILTER */}
               <div className="mt-8 px-5 pb-5">
                 <h2 className="text-2xl text-white font-bold mb-3">Car Type</h2>
                 <div className="space-y-3">
@@ -234,7 +241,11 @@ const Cars = () => {
                     return (
                       <div
                         key={type}
-                        onClick={() => setSelectedCarType(type)}
+                        onClick={() =>
+                          setSelectedCarType((prev) =>
+                            prev === type ? "" : type
+                          )
+                        }
                         className="flex items-center space-x-4 cursor-pointer"
                       >
                         <div
@@ -261,7 +272,7 @@ const Cars = () => {
                 </div>
               </div>
 
-              {/* Transmission */}
+              {/* TRANSMISSION */}
               <div className="mt-5 px-5 pb-8">
                 <h2 className="text-2xl text-white font-bold mb-3">
                   Transmission
@@ -272,7 +283,11 @@ const Cars = () => {
                     return (
                       <div
                         key={transmission}
-                        onClick={() => setselectTransmission(transmission)}
+                        onClick={() =>
+                          setselectTransmission((prev) =>
+                            prev === transmission ? "" : transmission
+                          )
+                        }
                         className="flex items-center space-x-4 cursor-pointer"
                       >
                         <div
@@ -299,9 +314,8 @@ const Cars = () => {
                 </div>
               </div>
             </div>
-            {/*Car Sidebar End */}
 
-            {/* Mobile Overlay + Close */}
+            {/* OVERLAY CLOSE BUTTON */}
             {isSidebarOpen && (
               <>
                 <div
@@ -310,14 +324,14 @@ const Cars = () => {
                 />
                 <button
                   onClick={() => setIsSidebarOpen(false)}
-                  className="fixed top-9.5 right-4  bg-mainColor p-3 rounded shadow-lg hover:bg-mainColor/90 transition lg:hidden"
+                  className="fixed top-9.5 right-4 bg-mainColor p-3 rounded shadow-lg hover:bg-mainColor/90 transition lg:hidden"
                 >
                   <GrClose size={22} className="text-white" />
                 </button>
               </>
             )}
 
-            {/* Product Grid */}
+            {/* PRODUCT GRID */}
             <div className="w-full lg:w-[65%] flex flex-col items-center p-5">
               <div className="flex justify-between items-center lg:hidden mx-5 mb-5 w-full max-w-6xl">
                 <button
@@ -346,7 +360,7 @@ const Cars = () => {
                 </Flex>
               </div>
 
-              {/* Pagination */}
+              {/* PAGINATION */}
               <div className="flex justify-center mt-10 w-full">
                 <ul className="flex gap-3 flex-wrap">
                   <li className="px-4 py-2 border border-mainColor text-mainColor rounded-lg cursor-pointer hover:bg-mainColor hover:text-white transition">
