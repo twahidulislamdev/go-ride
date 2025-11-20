@@ -46,7 +46,7 @@ const Cars = () => {
     {
       name: "Lamborghini Urus",
       brand: "Lamborghini",
-      type: ["SUVs", "Luxury"], // MULTIPLE TYPES ✔
+      type: ["SUVs", "Luxury"],
       image: LamborghiniUrus,
       doors: 4,
       passengers: 5,
@@ -57,7 +57,7 @@ const Cars = () => {
     {
       name: "Aston Martin DBX",
       brand: "Aston Martin",
-      type: ["SUVs"], // CHANGED to array for consistency ✔
+      type: ["SUVs", "Luxury"],
       image: astonMartinDbx,
       doors: 2,
       passengers: 4,
@@ -68,7 +68,7 @@ const Cars = () => {
     {
       name: "Bugatti Mistral W16",
       brand: "Bugatti",
-      type: ["Sports Car"],
+      type: ["Sports Car", "Luxury"],
       image: BugattiMistralW16,
       doors: 2,
       passengers: 2,
@@ -79,7 +79,7 @@ const Cars = () => {
     {
       name: "Bentley Continental",
       brand: "Bentley",
-      type: ["Sports Car"],
+      type: ["Sports Car", "Luxury"],
       image: BentleyContinental,
       doors: 2,
       passengers: 2,
@@ -90,7 +90,7 @@ const Cars = () => {
     {
       name: "Rolls Royce Cullinan",
       brand: "Rolls-Royce",
-      type: ["SUVs"],
+      type: ["SUVs", "Luxury"],
       image: RollsRoyceCullinan,
       doors: 4,
       passengers: 5,
@@ -127,7 +127,7 @@ const Cars = () => {
     };
   }, [isSidebarOpen]);
 
-  // 🔥 FILTER LOGIC (Supports both single & multi-type)
+  //  FILTER LOGIC (Supports both single & multi-type)
   const filteredCars = products.filter((car) => {
     const matchesSearch = car.name.toLowerCase().includes(search.toLowerCase());
     const matchesBrand = selectedBrand ? car.brand === selectedBrand : true;
