@@ -1,31 +1,44 @@
 import React from "react";
 import { FaUserFriends } from "react-icons/fa";
 import { GiGearStick } from "react-icons/gi";
-import { PiSuitcaseSimpleFill } from "react-icons/pi";
+import { IoChatbubbleEllipsesOutline, IoPersonOutline } from "react-icons/io5";
 
-const BlogCard = ({ car }) => {
+const BlogCard = ({ post }) => {
   return (
     <>
       <div className="w-full relative">
         {/* IMAGE */}
         <div className="w-full h-[300px] lg:h-[350px] overflow-hidden rounded-3xl">
           <img
-            src={car.image}
-            alt={car.name}
+            src={post.image}
+            alt={post.name}
             className="w-full h-full object-cover"
           />
         </div>
 
-        <div className="absolute left-1/2 -translate-x-1/2 -bottom-10 lg:-bottom-6 bg-neutralColor w-[90%] shadow-lg rounded-xl p-5 flex flex-col lg:flex-row justify-between items-center gap-3 lg:gap-6">
+        <div className="absolute left-1/2 -translate-x-1/2 -bottom-10 lg:-bottom-10 bg-neutralColor w-[90%] shadow-lg rounded-xl p-5 flex flex-col items-center gap-3">
           {/* Date part start */}
-          <div className="flex justify-center m-auto px-5 py-2 bg-mainColor  rounded-xl  -mt-8">
+          <div className="flex justify-center px-5 py-2 bg-mainColor rounded-xl -mt-8">
             <p className="text-sm lg:text-base font-medium text-black">
-              {car.date}
+              {post.date}
             </p>
           </div>
           {/* Date part end */}
-          <div className="">
-            
+
+          <div className="flex gap-4 mt-2">
+            {/* person part start */}
+            <div className="flex items-center gap-1 text-white">
+              <IoPersonOutline className="text-mainColor text-xl" />
+              <span className="text-white">{post.person}</span>
+            </div>
+            {/* person part end */}
+
+            {/* Comments part start   */}
+            <div className="flex items-center gap-1">
+              <IoChatbubbleEllipsesOutline className="text-mainColor text-xl" />
+              <span className="text-white">{post.commentsAmount} Comments</span>
+            </div>
+            {/* Comments part end   */}
           </div>
         </div>
       </div>
