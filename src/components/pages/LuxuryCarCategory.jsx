@@ -1,7 +1,7 @@
 import Container from "../Container";
 import NevigateByCategoryCard from "../NevigateByCategoryCard";
 
-import BankgroundOne from "../../assets/backgroundOne.jpg";
+import BackgroundOne from "../../assets/backgroundOne.jpg";
 import LamborghiniUrus from "../../assets/LamborghiniUrus.jpg";
 import astonMartinDbx from "../../assets/astonMartinDbx.jpg";
 import BugattiMistralW16 from "../../assets/BugattiMistralW16.jpg";
@@ -69,7 +69,7 @@ const LuxuryCarCategory = () => {
       name: "Bentley Bentayga",
       brand: "Bentley",
       type: "SUVs",
-      image: BankgroundOne,
+      image: BackgroundOne,
       doors: 4,
       passengers: 5,
       transmission: "Automatic",
@@ -83,7 +83,7 @@ const LuxuryCarCategory = () => {
       {/* Banner */}
       <div
         className="relative py-[90px] lg:py-[230px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${BankgroundOne})` }}
+        style={{ backgroundImage: `url(${BackgroundOne})` }}
       >
         <div className="absolute inset-0 bg-black/55"></div>
         <div className="relative z-10 text-center">
@@ -96,7 +96,7 @@ const LuxuryCarCategory = () => {
         </div>
       </div>
 
-      {/* Car Cards Section */}
+      {/* Car Cards Section start */}
       <div className="w-full py-[30px] lg:py-[50px] bg-secondaryColor pb-20 px-3 lg:px-0">
         <Container>
           <div className="grid grid-cols-1  lg:grid-cols-2 gap-10 space-y-15 lg:space-y-0">
@@ -106,6 +106,7 @@ const LuxuryCarCategory = () => {
           </div>
         </Container>
       </div>
+      {/* Car Cards Section end */}
     </>
   );
 };

@@ -3,6 +3,7 @@ import "./App.css";
 import RootLayout from "./components/layouts/RootLayout";
 import Home from "./components/pages/Home";
 import Cars from "./components/pages/Cars";
+import Blog from "./components/pages/Blog";
 import LuxuryCarCategory from "./components/pages/LuxuryCarCategory";
 import SportsCarCategory from "./components/pages/SportsCarCategory";
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/" element={<RootLayout />}>
             <Route path="/" element={<Home />} />
             <Route path="/cars" element={<Cars />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/luxuryCarCategory" element={<LuxuryCarCategory />} />
             <Route path="/sportsCarCategory" element={<SportsCarCategory />} />
           </Route>
