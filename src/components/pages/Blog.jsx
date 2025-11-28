@@ -40,15 +40,15 @@ const Blog = () => {
       commentsAmount: 7,
     },
     {
-      image: BlogCarFive,
       title: "How to check a car before renting? Important tips",
+      image: BlogCarFive,
       date: "August 24, 2025",
       person: "David K.",
       commentsAmount: 10,
     },
     {
-      image: BlogCarSix,
       title: "Penalties for violating the rules in rental cars",
+      image: BlogCarSix,
       date: "August 25, 2025",
       person: "Olivia M.",
       commentsAmount: 4,
