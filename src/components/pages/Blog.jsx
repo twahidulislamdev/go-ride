@@ -6,7 +6,7 @@ import BlogCarOne from "../../assets/blogCarOne.jpg";
 import BlogCarTwo from "../../assets/blogCarTwo.jpg";
 import BlogCarThree from "../../assets/blogCarThree.jpg";
 import BlogCarFour from "../../assets/blogCarFour.jpg";
-import BlogCarFive from "/src/assets/blogCarFive.jpg";
+
 import BlogCarSix from "../../assets/blogCarSix.jpg";
 
 const Blog = () => {
@@ -41,7 +41,7 @@ const Blog = () => {
     },
     {
       title: "How to check a car before renting? Important tips",
-      image: BlogCarFive,
+      image: BlogCarThree,
       date: "August 24, 2025",
       person: "David K.",
       commentsAmount: 10,
