@@ -1,5 +1,4 @@
-import { BsPerson } from "react-icons/bs";
-import { BsChatDots } from "react-icons/bs";
+import { IoChatbubbleEllipsesOutline, IoPersonOutline } from "react-icons/io5";
 
 const BlogCard = ({ post }) => {
   return (
@@ -25,14 +24,14 @@ const BlogCard = ({ post }) => {
         <div className="flex gap-4 mt-2">
           {/* person part start */}
           <div className="flex items-center gap-1 text-white">
-            <BsPerson className="text-mainColor text-xl" />
+            <IoPersonOutline className="text-mainColor text-xl" />
             <span className="text-white">{post.person}</span>
           </div>
           {/* person part end */}
 
           {/* Comments part start   */}
           <div className="flex items-center gap-1">
-            <BsChatDots className="text-mainColor text-xl" />
+            <IoChatbubbleEllipsesOutline className="text-mainColor text-xl" />
             <span className="text-white">{post.commentsAmount} Comments</span>
           </div>
           {/* Comments part end   */}
