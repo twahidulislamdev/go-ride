@@ -6,7 +6,7 @@ import BlogCarOne from "../../assets/blogCarOne.jpg";
 import BlogCarTwo from "../../assets/blogCarTwo.jpg";
 import BlogCarThree from "../../assets/blogCarThree.jpg";
 import BlogCarFour from "../../assets/blogCarFour.jpg";
-import BlogCarFive from "../../assets/blogCarFive.jpg";
+import BlogCarFive from "/src/assets/blogCarFive.jpg";
 import BlogCarSix from "../../assets/blogCarSix.jpg";
 
 const Blog = () => {
