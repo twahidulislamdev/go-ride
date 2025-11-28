@@ -1,6 +1,4 @@
 import React from "react";
-import { FaUserFriends } from "react-icons/fa";
-import { GiGearStick } from "react-icons/gi";
 import { IoChatbubbleEllipsesOutline, IoPersonOutline } from "react-icons/io5";
 
 const BlogCard = ({ post }) => {
