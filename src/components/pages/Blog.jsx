@@ -11,36 +11,42 @@ const Blog = () => {
   const blogPosts = [
     {
       image: LamborghiniUrus,
+      name: "Lamborghini Urus",
       date: "August 20, 2023",
       person: "John D.",
       commentsAmount: 5,
     },
     {
       image: astonMartinDbx,
+      name: "Aston Martin DBX",
       date: "August 21, 2023",
       person: "Sarah L.",
       commentsAmount: 8,
     },
     {
       image: BugattiMistralW16,
+      name: "Bugatti Mistral W16",
       date: "August 22, 2023",
       person: "Michael S.",
       commentsAmount: 12,
     },
     {
       image: BentleyContinental,
+      name: "Bentley Continental",
       date: "August 23, 2023",
       person: "Emily R.",
       commentsAmount: 7,
     },
     {
       image: RollsRoyceCullinan,
+      name: "Rolls Royce Cullinan",
       date: "August 24, 2023",
       person: "David K.",
       commentsAmount: 10,
     },
     {
       image: BackgroundOne,
+      name: "Background One",
       date: "August 25, 2023",
       person: "Olivia M.",
       commentsAmount: 4,
@@ -68,7 +74,7 @@ const Blog = () => {
       {/* Car Cards Section start */}
       <div className="w-full py-[30px] lg:py-[50px] bg-secondaryColor pb-20 px-3 lg:px-0">
         <Container>
-          <div className="grid grid-cols-1  lg:grid-cols-3 gap-10 space-y-15 lg:space-y-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 space-y-8">
             {blogPosts.map((post, index) => (
               <BlogCard key={index} post={post} />
             ))}
