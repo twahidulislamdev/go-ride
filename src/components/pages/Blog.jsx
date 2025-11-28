@@ -1,6 +1,6 @@
 import Container from "../Container";
 import BlogCard from "../BlogCard";
-import BackgroundOne from "../../assets/BackgroundOne.jpg";
+import BackgroundOne from '../../assets/backgroundOne.jpg'
 import LamborghiniUrus from "../../assets/LamborghiniUrus.jpg";
 import astonMartinDbx from "../../assets/astonMartinDbx.jpg";
 import BugattiMistralW16 from "../../assets/BugattiMistralW16.jpg";
