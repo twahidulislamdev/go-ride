@@ -5,9 +5,12 @@ import ClintOne from "../../assets/clintOne.jpg";
 import ClintTwo from "../../assets/clintTwo.jpg";
 import ClintThree from "../../assets/clintThree.jpg";
 
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// Swiper imports
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+// Import only core Swiper styles (no pagination css needed)
+import "swiper/css";
 
 const Testimonials = () => {
   const testimonials = [
@@ -34,19 +37,6 @@ const Testimonials = () => {
     },
   ];
 
-  // Slider settings for mobile/tablet
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 600,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3500,
-    arrows: false,
-    pauseOnHover: true,
-  };
-
   return (
     <section className="relative py-10 bg-gradient-to-b from-secondaryColor to-[#0b0b0b] overflow-hidden">
       {/* Background glow or texture */}
@@ -66,18 +56,30 @@ const Testimonials = () => {
           </p>
         </div>
 
-        {/* Mobile Slider */}
+        {/* Mobile & Tablet Slider - visible below lg breakpoint - NO DOTS */}
         <div className="block lg:hidden mt-8 px-3">
-          <Slider {...settings}>
+          <Swiper
+            modules={[Autoplay]}
+            spaceBetween={24}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 3500,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            }}
+            speed={600}
+            // No pagination module = no dots
+          >
             {testimonials.map((client, index) => (
-              <div key={index}>
+              <SwiperSlide key={index}>
                 <TestimonialCard {...client} />
-              </div>
+              </SwiperSlide>
             ))}
-          </Slider>
+          </Swiper>
         </div>
 
-        {/* Desktop Grid */}
+        {/* Desktop Grid - visible at lg and above */}
         <div className="hidden lg:grid grid-cols-3 gap-8 mt-12">
           {testimonials.map((client, index) => (
             <TestimonialCard key={index} {...client} />
