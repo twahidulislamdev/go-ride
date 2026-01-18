@@ -3,7 +3,11 @@ import { FaQuoteLeft, FaStar } from "react-icons/fa";
 
 const TestimonialCard = ({ name, role, image, text, rating }) => {
   return (
-    <div className="relative group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 shadow-xl text-white transition-all duration-500 hover:shadow-2xl hover:scale-[1.02]">
+    <div
+      className="relative group bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl
+     p-6 shadow-xl text-white transition-all duration-500 hover:shadow-2xl hover:scale-[1.02] 
+     h-[280px]"
+    >
       {/* Decorative Quote Icon */}
       <FaQuoteLeft className="absolute top-5 left-5 text-4xl text-yellow-400/70 opacity-30 group-hover:opacity-50 transition-opacity duration-300" />
 
@@ -13,7 +17,7 @@ const TestimonialCard = ({ name, role, image, text, rating }) => {
       </p>
 
       {/* Reviewer Info */}
-      <div className="flex items-center gap-4">
+      <div className="absolute bottom-6 left-6   flex items-center gap-4">
         <img
           src={image}
           alt={name}
